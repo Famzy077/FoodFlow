@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  contain: layout;
+  padding: 0;
+  scrollbar-width: none !important;/* Hide scrollbar */
+  margin: 0;
+}
+
+/* For Webkit-based browsers (Chrome, Safari and Opera) */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.menuCard{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.displayCard{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  /* gap: 1rem; */
+}
+
+.responsiveImage {
+  width: 100%;
+  height: auto;
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
+
+@media screen and (max-width : 640px) {
+  *{
+    contain: none !important;
+  }
+}
+@media screen and (max-width : 640px) and (min-width : 700px) {
+  *{
+    contain: none !important;
+  }
+}

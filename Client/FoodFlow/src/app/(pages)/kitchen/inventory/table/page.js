@@ -84,7 +84,7 @@ export default function Page() {
         setLoading(true);
         const response = await fetch(
           // `http://localhost:5000/inventory/me`,
-          `https://foodflow-server-gkv6.vercel.app/inventory/me`,
+          `https://food-flow-dusky.vercel.app/inventory/me`,
           {
             method: "GET",
             headers: {

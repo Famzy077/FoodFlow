@@ -4,7 +4,7 @@ import RefreshAccessToken from './RefreshAccessToken';
 
 const apiClient = axios.create({
   // baseURL: 'http://localhost:5000'
-  baseURL: 'https://foodflow-server-gkv6.vercel.app'
+  baseURL: 'https://food-flow-dusky.vercel.app'
 });
 
 apiClient.interceptors.response.use(
@@ -22,7 +22,7 @@ apiClient.interceptors.response.use(
 
 export const apiClient2 = axios.create({
   // baseURL: 'http://localhost:5000'
-  baseURL: 'https://foodflow-server-gkv6.vercel.app'
+  baseURL: 'https://food-flow-dusky.vercel.app'
 })
 apiClient2.interceptors.request.use(
   (config)=>{

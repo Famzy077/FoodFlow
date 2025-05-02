@@ -145,7 +145,7 @@ export default function ReactTable() {
         setLoading(true);
         const response = await fetch(
           // `http://localhost:5000/orders/me`,
-          `https://foodflow-server-gkv6.vercel.app/orders/me`,
+          `https://food-flow-dusky.vercel.app/orders/me`,
           {
             method: "GET",
             headers: {

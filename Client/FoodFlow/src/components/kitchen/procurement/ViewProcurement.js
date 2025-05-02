@@ -40,7 +40,7 @@ export default function ViewProcurement() {
     try {
       const response = await fetch(
         // "http://localhost:5000/procurement",
-        "https://foodflow-server-gkv6.vercel.app/procurement",
+        "https://food-flow-dusky.vercel.app/procurement",
         {
           method: "GET",
           headers: {

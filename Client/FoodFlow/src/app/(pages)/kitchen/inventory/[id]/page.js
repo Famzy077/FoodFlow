@@ -212,7 +212,7 @@ export default function Page() {
       try {
         setLoading(true);
         const response = await fetch(
-          `https://foodflow-server-gkv6.vercel.app/products/${id}`,
+          `https://food-flow-dusky.vercel.app/products/${id}`,
           {
             method: "GET",
             headers: {

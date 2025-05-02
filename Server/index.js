@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({ extended: true })); // For URL encoded data
 require('dotenv').config();
 connectDb(); //CONNECT TO THE DATABASE
 app.use(cors({
-    origin: ['https://food-flow-dashboard.vercel.app', 'http://localhost:5000'],
+    origin: ['https://foodflow-9bizrj8xk-akinola-femis-projects.vercel.app', 'http://localhost:5000'],
     credentials: true
 }));
 // ROUTES
